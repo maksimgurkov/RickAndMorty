@@ -8,10 +8,10 @@
 import Foundation
 
 struct RickAndMorty: Codable {
-    let results: [Result]
+    let results: [Person]
 }
 
-struct Result: Codable {
+struct Person: Codable {
     let name: String
     let status: Status
     let species: Species
@@ -21,15 +21,43 @@ struct Result: Codable {
     let location: Location
     let image: String
     let episode: [String]
-    let url: String
-    let created: String
+
+    var descriptionPerson: String {
+        """
+    Name: \(name)
+
+    Status: \(status.rawValue)
+    Species: \(species.rawValue)
+    Gender: \(gender.rawValue)
+    """
+    }
+    
+    var fulDescription: String {
+        """
+    Status: \(status.rawValue)
+    Species: \(species.rawValue)
+    Type: \(type)
+    Gender: \(gender.rawValue)
+    Origin: \(origin.name)
+    Location: \(location.name)
+    """
+    }
+}
+
+struct Episode: Decodable {
+    let name: String
+    let date: String
     
     var description: String {
         """
-Name: \(name)
-Status: \(status)
-Type: \(type)
-"""
+    Title: \(name)
+    Date: \(date)
+    """
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case date = "air_date"
     }
 }
 

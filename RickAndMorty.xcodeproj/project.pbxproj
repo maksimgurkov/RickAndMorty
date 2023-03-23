@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7614641C29CC26B600E53EBF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7614641B29CC26B600E53EBF /* NetworkManager.swift */; };
+		7614641E29CC314700E53EBF /* PersonsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7614641D29CC314700E53EBF /* PersonsListTableViewController.swift */; };
+		7614642129CC32B300E53EBF /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7614642029CC32B300E53EBF /* PersonTableViewCell.swift */; };
+		7614642329CC440600E53EBF /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7614642229CC440600E53EBF /* PersonInfoViewController.swift */; };
+		7614642529CC4D9D00E53EBF /* EpisodesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7614642429CC4D9D00E53EBF /* EpisodesController.swift */; };
 		764480C929C869F200F8CD07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764480C829C869F200F8CD07 /* AppDelegate.swift */; };
 		764480CB29C869F200F8CD07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764480CA29C869F200F8CD07 /* SceneDelegate.swift */; };
-		764480CD29C869F200F8CD07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764480CC29C869F200F8CD07 /* ViewController.swift */; };
 		764480D029C869F200F8CD07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764480CE29C869F200F8CD07 /* Main.storyboard */; };
 		764480D229C869F300F8CD07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764480D129C869F300F8CD07 /* Assets.xcassets */; };
 		764480D529C869F300F8CD07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764480D329C869F300F8CD07 /* LaunchScreen.storyboard */; };
@@ -17,10 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		764480C529C869F200F8CD07 /* HW3.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW3.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7614641B29CC26B600E53EBF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7614641D29CC314700E53EBF /* PersonsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListTableViewController.swift; sourceTree = "<group>"; };
+		7614642029CC32B300E53EBF /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		7614642229CC440600E53EBF /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
+		7614642429CC4D9D00E53EBF /* EpisodesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesController.swift; sourceTree = "<group>"; };
+		764480C529C869F200F8CD07 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764480C829C869F200F8CD07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		764480CA29C869F200F8CD07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		764480CC29C869F200F8CD07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		764480CF29C869F200F8CD07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		764480D129C869F300F8CD07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764480D429C869F300F8CD07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,10 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7614641A29CC268900E53EBF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7614641B29CC26B600E53EBF /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7614641F29CC329000E53EBF /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				7614642029CC32B300E53EBF /* PersonTableViewCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
 		764480BC29C869F200F8CD07 = {
 			isa = PBXGroup;
 			children = (
-				764480C729C869F200F8CD07 /* HW3.2 */,
+				764480C729C869F200F8CD07 /* RickAndMorty */,
 				764480C629C869F200F8CD07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,21 +74,23 @@
 		764480C629C869F200F8CD07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				764480C529C869F200F8CD07 /* HW3.2.app */,
+				764480C529C869F200F8CD07 /* RickAndMorty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		764480C729C869F200F8CD07 /* HW3.2 */ = {
+		764480C729C869F200F8CD07 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
-				764480DC29C86A2D00F8CD07 /* App */,
 				764480DF29C86DB300F8CD07 /* Models */,
 				764480DD29C86A4F00F8CD07 /* ViewControllers */,
+				7614641F29CC329000E53EBF /* ViewCells */,
+				7614641A29CC268900E53EBF /* Services */,
+				764480DC29C86A2D00F8CD07 /* App */,
 				764480DE29C86A6200F8CD07 /* Storyboard */,
 				764480D129C869F300F8CD07 /* Assets.xcassets */,
 			);
-			path = HW3.2;
+			path = RickAndMorty;
 			sourceTree = "<group>";
 		};
 		764480DC29C86A2D00F8CD07 /* App */ = {
@@ -80,7 +106,9 @@
 		764480DD29C86A4F00F8CD07 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				764480CC29C869F200F8CD07 /* ViewController.swift */,
+				7614641D29CC314700E53EBF /* PersonsListTableViewController.swift */,
+				7614642229CC440600E53EBF /* PersonInfoViewController.swift */,
+				7614642429CC4D9D00E53EBF /* EpisodesController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -105,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		764480C429C869F200F8CD07 /* HW3.2 */ = {
+		764480C429C869F200F8CD07 /* RickAndMorty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 764480D929C869F300F8CD07 /* Build configuration list for PBXNativeTarget "HW3.2" */;
+			buildConfigurationList = 764480D929C869F300F8CD07 /* Build configuration list for PBXNativeTarget "RickAndMorty" */;
 			buildPhases = (
 				764480C129C869F200F8CD07 /* Sources */,
 				764480C229C869F200F8CD07 /* Frameworks */,
@@ -117,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = HW3.2;
+			name = RickAndMorty;
 			productName = HW3.2;
-			productReference = 764480C529C869F200F8CD07 /* HW3.2.app */;
+			productReference = 764480C529C869F200F8CD07 /* RickAndMorty.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 764480C029C869F200F8CD07 /* Build configuration list for PBXProject "HW3.2" */;
+			buildConfigurationList = 764480C029C869F200F8CD07 /* Build configuration list for PBXProject "RickAndMorty" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,7 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				764480C429C869F200F8CD07 /* HW3.2 */,
+				764480C429C869F200F8CD07 /* RickAndMorty */,
 			);
 		};
 /* End PBXProject section */
@@ -173,10 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7614642129CC32B300E53EBF /* PersonTableViewCell.swift in Sources */,
 				764480E129C86DE500F8CD07 /* Persone.swift in Sources */,
-				764480CD29C869F200F8CD07 /* ViewController.swift in Sources */,
+				7614641C29CC26B600E53EBF /* NetworkManager.swift in Sources */,
+				7614642529CC4D9D00E53EBF /* EpisodesController.swift in Sources */,
 				764480C929C869F200F8CD07 /* AppDelegate.swift in Sources */,
 				764480CB29C869F200F8CD07 /* SceneDelegate.swift in Sources */,
+				7614642329CC440600E53EBF /* PersonInfoViewController.swift in Sources */,
+				7614641E29CC314700E53EBF /* PersonsListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N85MKK397C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW3.2/App/Info.plist;
+				INFOPLIST_FILE = RickAndMorty/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -353,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N85MKK397C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW3.2/App/Info.plist;
+				INFOPLIST_FILE = RickAndMorty/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -375,7 +407,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		764480C029C869F200F8CD07 /* Build configuration list for PBXProject "HW3.2" */ = {
+		764480C029C869F200F8CD07 /* Build configuration list for PBXProject "RickAndMorty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				764480D729C869F300F8CD07 /* Debug */,
@@ -384,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		764480D929C869F300F8CD07 /* Build configuration list for PBXNativeTarget "HW3.2" */ = {
+		764480D929C869F300F8CD07 /* Build configuration list for PBXNativeTarget "RickAndMorty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				764480DA29C869F300F8CD07 /* Debug */,
