@@ -39,6 +39,7 @@ extension EpisodesController: UITableViewDataSource, UITableViewDelegate {
         var content = cell.defaultContentConfiguration()
         content.text = epesode.description
         cell.contentConfiguration = content
+        cell.selectionStyle = .none
         return cell
     }
     
